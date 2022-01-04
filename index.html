@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formation HTML & CSS</title>
+</head>
+
+<body>
+    <header id="entete">
+        <h1 class="titre">
+            HTML 5 & CSS 3
+        </h1>
+        <img src="images\Mouhmeu.jpg" alt="La vache">
+    </header>
+    <div class="gauche">
+        <nav>
+            Menu de navigation
+            <ul>
+                <li>
+                    <a href=#entete>Haut de page</a>
+                </li>
+                <li>
+                    <a href=#generalite> Généralités</a>
+                </li>
+                <li>
+                    <a href=#balises> Balises</a>
+                </li>
+                <li>
+                    <a href=#ref>Références</a>
+                </li>
+                <li>
+                    <a href=#pdf>Liens pdf</a>
+                </li>
+                <li>
+                    <a href=#video>Média</a>
+                </li>
+                <li>
+                    <a href="#tableau">Tableau</a>
+                </li>
+                <li>
+                    <a href="#formulaire">Formulaire</a>
+                </li>
+                <li>
+                    <a href="#animation">Cube</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <aside>
+
+            C'est un fond écran de type Bob L'éponge
+        </aside>
+    </div>
+
+    <section>
+
+        <article id="generalite">
+            <h2>
+                Généralités:
+            </h2>
+            <p>
+                Voici uen présentation de de la constructin d'une page web. Dans cet exemple nous allons présenter la construction simple d'une page. La strucutre d'une page web se base sur un ensemble de balise. En voici quelques exemples
+            </p>
+
+        </article>
+
+
+        <article id="balises">
+            <h2>
+                Les balises:
+            </h2>
+
+            <ul>
+                <li>
+                    <strong>Head:</strong> Cette balise permet de contenir des métadonnées et du titre de l'onglet de navigation.
+                </li>
+                <li>
+                    <strong>Body:</strong> La balise générale qui contient le contenu de la page web. Elle regroupe le contenu affiché de votre page.
+                </li>
+                <li>
+                    <strong>div:</strong> Cette balise permet structuré votre zone de contenu. Plusieurs balises div à la liste sont représentées verticalement.
+
+                </li>
+                <li>
+                    <strong>span:</strong> C'est aussi une balise qui permet de structurer votre contenu. Généralement elles sont utilisées pour gérer horizontalement le contenu.
+                </li>
+            </ul>
+
+        </article>
+        <article id="ref">
+            <h2>
+                Références:
+            </h2>
+            Pour plus de détails vous pouvez regarder la page de mozilla sur ces différentes balises.
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div" target="_blank"> La balise
+                        div</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/span" target="_blank"> La balise
+                        span</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/body" target="_blank"> La balise
+                        body</a>
+                </li>
+            </ul>
+
+        </article>
+
+        <article id="pdf">
+            <h2>
+                Liens pdf
+            </h2>
+
+            Voici quelques exemples de lien vers des pdf.
+            <ul>
+                <li>
+                    <a href="documents\Putnam2019.pdf" target="_blanck">Putman Exam 2019</a>
+                </li>
+                <li>
+                    <a href="documents\Denombrement.pdf" target="_blanck">Fiche sur le dénombrement</a>
+                </li>
+            </ul>
+        </article>
+
+        <article id="video">
+            <h2>
+                Média
+            </h2>
+            Voici un exemple de l'intégration d'une vidéo.
+
+
+        </article>
+
+        <article id="tableau">
+            <h2>
+                Tableau
+            </h2>
+            Voici un exemple de tableau.
+            <table>
+                <caption>Un tableau Mouhmeuesque</caption>
+                <thead>
+                    <tr>
+                        <th>Ligne</th>
+                        <th>Objet</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>N°1</td>
+                        <td>Banane</td>
+                        <td>10kg</td>
+                    </tr>
+                    <tr>
+                        <td>N°2</td>
+                        <td>Orange</td>
+                        <td>15kg</td>
+                    </tr>
+                    <tr>
+                        <td>N°3</td>
+                        <td>Pomme</td>
+                        <td>7kg</td>
+                    </tr>
+                    <tr>
+                        <td>N°4</td>
+                        <td>Poire</td>
+                        <td>12kg</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan=3>Fruit du marché de Drancy</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </article>
+
+        <article id="formulaire">
+            <h2>Exemples de formulaires</h2>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Jean-Michel" />
+                    <br />
+
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Baguette" />
+                    <br />
+
+                    <label for="adresse">Rue:</label>
+                    <textarea name="adresse" id="adresse" rows="1" placeholder="45 rue des marchés"></textarea>
+                    <br/>
+                    <label for="cp">Code Postal:</label>
+                    <input type="number" name="cp" id="cp" min="1000" max="99999" step="1" placeholder="54120">
+                    <br />
+                    <label for="ville">Ville</label>
+                    <textarea name="ville" id="ville" rows="1" placeholder="Epinal-plage"></textarea>
+                </fieldset>
+
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" placeholder="azerty88" />
+                <br />
+
+                <label for="range">Curseur:</label>
+                <input type="range" id="range" name="range" min="10" max="100" step="1" value="15" />
+                <br/>
+                <input type="number" id="range" name="range" min="10" max="100" step="1" value="15" />
+                <br />
+
+                <label for="checkbox">Cases à cocher:</label>
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <br />
+
+                <fieldset>
+                    <legend>Réglement</legend>
+                    <input type="radio" name="radio" id="radio-monnaie" />
+                    <label for="monnaie">Monnaie</label>
+                    <input type="radio" name="radio" id="radio-cheque" />
+                    <label for="cheque">Chèque</label>
+                    <input type="radio" name="radio" id="radio-carte" checked />
+                    <label for="CB">Carte</label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>
+                        Date et heure
+                    </legend>
+
+                    <label for="date">Choissez votre créneau de passage:</label>
+                    <br>
+                    <input type="time" name="time" id="time" />
+
+                    <input type="date" name="date" id="date" />
+                    <br />
+                </fieldset>
+
+                <label for="select">Choissez votre couleur préférée:</label>
+                <select name="mes-couleur" id="mes-couleur">
+                    <option value=""></option>
+                    <option value="bleu">Bleu</option>
+                    <option value="noire">Noire</option>
+                    <option value="rouge">Rouge</option>
+                    <option value="vert">Vert</option>
+                </select>
+                <br />
+
+                <button type="submit">Enoyer</button>
+                <button type="reset">Effacer</button>
+
+            </form>
+        </article>
+
+        <article id="animation">
+            <h2>
+                Exemple d'animation d'une cube
+            </h2>
+
+            <div id="cube3D">
+                <div id="face1">1</div>
+                <div id="face2"><a href="https://www.google.fr/" target="_blanck"> GO </a></div>
+                <div id="face3">3</div>
+                <div id="face4">4</div>
+                <div id="face5">5</div>
+                <div id="face6">6</div>
+            </div>
+
+            <div id="disque">
+                <div class="anim"></div>
+            </div>
+
+            <button id="animPlay">Play</button>
+            <button id="animPause">Pause</button>
+        </article>
+
+    </section>
+
+
+    <footer id="pied">
+        <p>
+            Copyright: Jean Gabriel Houot
+        </p>
+        <p>
+            &copy Mouhmeu Entertainment Buissnes
+        </p>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
